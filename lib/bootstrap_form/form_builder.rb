@@ -7,7 +7,7 @@ module BootstrapForm
     delegate :content_tag, to: :@template
     delegate :capture, to: :@template
 
-    def initialize(object_name, object, template, options, proc=nil)
+    def initialize(object_name, object, template, options)
       help = options.fetch(:help, nil)
       @help_class = help.eql?(:block) ? 'help-block' : 'help-inline'
 
